@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Java Usage",
-            "content": "System.out.println(&quot;hello&quot;) . hello .",
-            "url": "https://divyanshisuri.github.io/divya-srepo/2022/08/22/java.html",
-            "relUrl": "/2022/08/22/java.html",
+            "title": "Python Usage",
+            "content": "print(&quot;hello world&quot;) . hello world .",
+            "url": "https://divyanshisuri.github.io/divya-srepo/2022/08/22/python.html",
+            "relUrl": "/2022/08/22/python.html",
             "date": " • Aug 22, 2022"
         }
         
@@ -13,11 +13,11 @@
   
     
         ,"post1": {
-            "title": "Python Usage",
-            "content": "print(&quot;hello world&quot;) . hello world .",
-            "url": "https://divyanshisuri.github.io/divya-srepo/2022/08/21/python.html",
-            "relUrl": "/2022/08/21/python.html",
-            "date": " • Aug 21, 2022"
+            "title": "Java Usage",
+            "content": "System.out.println(&quot;hello&quot;) . hello .",
+            "url": "https://divyanshisuri.github.io/divya-srepo/2022/08/22/java.html",
+            "relUrl": "/2022/08/22/java.html",
+            "date": " • Aug 22, 2022"
         }
         
     
