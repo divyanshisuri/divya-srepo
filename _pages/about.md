@@ -1,8 +1,11 @@
 ---
 layout: page
-title: About Me
+title: About Me Divya!
 permalink: /about/
 ---
+
+I am a student at Del Norte Highschool! I love to paint and to code!
+
 
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
