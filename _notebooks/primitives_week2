@@ -1,0 +1,80 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Basic Primitive and Wrapper Classes Usage"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3.14\n"
+     ]
+    }
+   ],
+   "source": [
+    "int a = 4.20;\n",
+    "float b = 3.14f;\n",
+    "float sum = (a + b);\n",
+    "System.out.println(sum);"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "divya suri\n"
+     ]
+    }
+   ],
+   "source": [
+    "String x = \"divya\";\n",
+    "String y = \"daita\";\n",
+    "String name = x + \" \" + y;\n",
+    "System.out.println(name);"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "divya loves to paint!\n"
+     ]
+    }
+   ],
+   "source": [
+    "boolean loves_to_paint = true;\n",
+    "boolean loves_to_paint = false;\n",
+    "\n",
+    "if (loves_to_paint){\n",
+    "\n",
+    "    System.out.println(\divya loves to paint!\);\n",
+    "}\n",
+    "\n",
+    "else if (loves to paint{\n",
+    "\n",
+    "    System.out.println(\"divya loves to paint!\");\n",
+    "\n",
+    "}"
+   ]
+  },
+ 
+  
