@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Tools installation | divya</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Tools installation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://divyanshisuri.github.io/divya-srepo/2022/08/27/bash_kernel.html" />
+<meta property="og:url" content="https://divyanshisuri.github.io/divya-srepo/2022/08/27/bash_kernel.html" />
+<meta property="og:site_name" content="divya" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-08-27T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Tools installation" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-27T00:00:00-05:00","datePublished":"2022-08-27T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Tools installation","mainEntityOfPage":{"@type":"WebPage","@id":"https://divyanshisuri.github.io/divya-srepo/2022/08/27/bash_kernel.html"},"url":"https://divyanshisuri.github.io/divya-srepo/2022/08/27/bash_kernel.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/divya-srepo/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://divyanshisuri.github.io/divya-srepo/feed.xml" title="divya" /><link rel="shortcut icon" type="image/x-icon" href="/divya-srepo/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/divya-srepo/">divya</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/divya-srepo/about/">About Me Divya!</a><a class="page-link" href="/divya-srepo/about/">About Me Divya!</a><a class="page-link" href="/divya-srepo/search/">Search</a><a class="page-link" href="/divya-srepo/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Tools installation</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-27T00:00:00-05:00" itemprop="datePublished">
+        Aug 27, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      7 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/divyanshisuri/divya-srepo/tree/master/_notebooks/2022-08-27-bash_kernel.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/divya-srepo/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/divyanshisuri/divya-srepo/master?filepath=_notebooks%2F2022-08-27-bash_kernel.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/divya-srepo/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/divyanshisuri/divya-srepo/blob/master/_notebooks/2022-08-27-bash_kernel.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/divya-srepo/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fdivyanshisuri%2Fdivya-srepo%2Fblob%2Fmaster%2F_notebooks%2F2022-08-27-bash_kernel.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/divya-srepo/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-08-27-bash_kernel.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Using conditional statement to create a project directory and project&quot;</span>
+
+<span class="c1"># Variable section</span>
+<span class="nb">export</span> <span class="nv">project_dir</span><span class="o">=</span><span class="nv">$HOME</span>/vscode  <span class="c1"># change vscode to different name to test git clone</span>
+<span class="nb">export</span> <span class="nv">project</span><span class="o">=</span><span class="nv">$project_dir</span>/APCSA  <span class="c1"># change APCSA to name of project from git clone</span>
+<span class="nb">export</span> <span class="nv">project_repo</span><span class="o">=</span><span class="s2">&quot;https://github.com/nighthawkcoders/APCSA.git&quot;</span>  <span class="c1"># change to project of choice</span>
+
+<span class="nb">cd</span> ~    <span class="c1"># start in home directory</span>
+
+<span class="c1"># Conditional block to make a project directory</span>
+<span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$project_dir</span> <span class="o">]</span>
+<span class="k">then</span> 
+    <span class="nb">echo</span> <span class="s2">&quot;Directory </span><span class="nv">$project_dir</span><span class="s2"> does not exists... makinng directory </span><span class="nv">$project_dir</span><span class="s2">&quot;</span>
+    mkdir -p <span class="nv">$project_dir</span>
+<span class="k">fi</span>
+<span class="nb">echo</span> <span class="s2">&quot;Directory </span><span class="nv">$project_dir</span><span class="s2"> exists.&quot;</span> 
+
+<span class="c1"># Conditional block to git clone a project from project_repo</span>
+<span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$project</span> <span class="o">]</span>
+<span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&quot;Directory </span><span class="nv">$project</span><span class="s2"> does not exists... cloning </span><span class="nv">$project_repo</span><span class="s2">&quot;</span>
+    <span class="nb">cd</span> <span class="nv">$project_dir</span>
+    git clone <span class="nv">$project_repo</span>
+    <span class="nb">cd</span> ~
+<span class="k">fi</span>
+<span class="nb">echo</span> <span class="s2">&quot;Directory </span><span class="nv">$project</span><span class="s2"> exists.&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Using conditional statement to create a project directory and project
+Directory /home/divya/vscode exists.
+Directory /home/divya/vscode/APCSA does not exists... cloning https://github.com/nighthawkcoders/APCSA.git
+Cloning into &#39;APCSA&#39;...
+remote: Enumerating objects: 8951, done.
+remote: Counting objects: 100% (428/428), done.
+remote: Compressing objects: 100% (206/206), done.
+remote: Total 8951 (delta 248), reused 380 (delta 213), pack-reused 8523
+Receiving objects: 100% (8951/8951), 14.50 MiB | 1.78 MiB/s, done.
+Resolving deltas: 100% (5022/5022), done.
+Directory /home/divya/vscode/APCSA exists.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="lis-(ls)">lis (ls)<a class="anchor-link" href="#lis-(ls)"> </a></h3><p>ls is used to list all the directories in the main directory. 
+ls -a is used to list all the hidden files</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
+<span class="nb">cd</span> <span class="nv">$project</span>
+<span class="nb">pwd</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;list top level or root of files with project pulled from github&quot;</span>
+ls
+
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;list again with hidden files pulled from github&quot;</span>
+ls -a   <span class="c1"># hidden files flag, many shell commands have flags</span>
+
+<span class="nb">cd</span> /home/divya/vscode/divya-srepo/
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;list all files in long format&quot;</span>
+ls -al   <span class="c1"># all files and long listing</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Navigate to project, then navigate to area wwhere files were cloned
+/home/divya
+
+list top level or root of files with project pulled from github
+<span class="ansi-blue-intense-fg ansi-bold">APCSA</span>                                <span class="ansi-red-intense-fg ansi-bold">ijava-1.3.0.zip</span>
+<span class="ansi-green-intense-fg ansi-bold">Anaconda3-2022.05-Linux-x86_64.sh</span>    install.py
+Anaconda3-2022.05-Linux-x86_64.sh.1  <span class="ansi-blue-intense-fg ansi-bold">java</span>
+Anaconda3-2022.05-Linux-x86_64.sh.2  <span class="ansi-blue-intense-fg ansi-bold">junk</span>
+Anaconda3-2022.05-Linux-x86_64.sh.3  <span class="ansi-blue-intense-fg ansi-bold">vscode</span>
+<span class="ansi-blue-intense-fg ansi-bold">anaconda3</span>
+
+list again with hidden files pulled from github
+<span class="ansi-blue-intense-fg ansi-bold">.</span>              <span class="ansi-blue-intense-fg ansi-bold">.landscape</span>                 .wget-hsts
+<span class="ansi-blue-intense-fg ansi-bold">..</span>             .lesshst                   <span class="ansi-blue-intense-fg ansi-bold">APCSA</span>
+.bash_history  <span class="ansi-blue-intense-fg ansi-bold">.local</span>                     <span class="ansi-green-intense-fg ansi-bold">Anaconda3-2022.05-Linux-x86_64.sh</span>
+.bash_logout   <span class="ansi-blue-intense-fg ansi-bold">.m2</span>                        Anaconda3-2022.05-Linux-x86_64.sh.1
+.bashrc        .motd_shown                Anaconda3-2022.05-Linux-x86_64.sh.2
+<span class="ansi-blue-intense-fg ansi-bold">.cache</span>         <span class="ansi-blue-intense-fg ansi-bold">.node-gyp</span>                  Anaconda3-2022.05-Linux-x86_64.sh.3
+<span class="ansi-blue-intense-fg ansi-bold">.conda</span>         <span class="ansi-blue-intense-fg ansi-bold">.npm</span>                       <span class="ansi-blue-intense-fg ansi-bold">anaconda3</span>
+<span class="ansi-blue-intense-fg ansi-bold">.config</span>        .profile                   <span class="ansi-red-intense-fg ansi-bold">ijava-1.3.0.zip</span>
+<span class="ansi-blue-intense-fg ansi-bold">.dbus</span>          .sudo_as_admin_successful  install.py
+.gitconfig     <span class="ansi-blue-intense-fg ansi-bold">.vim</span>                       <span class="ansi-blue-intense-fg ansi-bold">java</span>
+<span class="ansi-blue-intense-fg ansi-bold">.ipython</span>       .viminfo                   <span class="ansi-blue-intense-fg ansi-bold">junk</span>
+<span class="ansi-blue-intense-fg ansi-bold">.jupyter</span>       <span class="ansi-blue-intense-fg ansi-bold">.vscode-server</span>             <span class="ansi-blue-intense-fg ansi-bold">vscode</span>
+bash: cd: /home/divya/vscode/divya-srepo/: No such file or directory
+
+list all files in long format
+total 2702080
+drwxr-xr-x 20 divya divya      4096 Aug 23 08:50 <span class="ansi-blue-intense-fg ansi-bold">.</span>
+drwxr-xr-x  3 root  root       4096 Aug 18 22:39 <span class="ansi-blue-intense-fg ansi-bold">..</span>
+-rw-------  1 divya divya     15229 Aug 26 00:22 .bash_history
+-rw-r--r--  1 divya divya       220 Aug 18 22:39 .bash_logout
+-rw-r--r--  1 divya divya      4246 Aug 19 09:38 .bashrc
+drwxr-xr-x  7 divya divya      4096 Aug 23 08:50 <span class="ansi-blue-intense-fg ansi-bold">.cache</span>
+drwxr-xr-x  2 divya divya      4096 Aug 19 09:23 <span class="ansi-blue-intense-fg ansi-bold">.conda</span>
+drwxr-xr-x  3 divya divya      4096 Aug 23 08:50 <span class="ansi-blue-intense-fg ansi-bold">.config</span>
+drwx------  3 divya divya      4096 Aug 20 17:56 <span class="ansi-blue-intense-fg ansi-bold">.dbus</span>
+-rw-r--r--  1 divya divya        56 Aug 18 22:51 .gitconfig
+drwxr-xr-x  3 divya divya      4096 Aug 20 18:46 <span class="ansi-blue-intense-fg ansi-bold">.ipython</span>
+drwxr-xr-x  2 divya divya      4096 Aug 20 11:29 <span class="ansi-blue-intense-fg ansi-bold">.jupyter</span>
+drwxr-xr-x  2 divya divya      4096 Aug 18 22:39 <span class="ansi-blue-intense-fg ansi-bold">.landscape</span>
+-rw-------  1 divya divya        28 Aug 20 18:35 .lesshst
+drwxr-xr-x  5 divya divya      4096 Aug 20 18:46 <span class="ansi-blue-intense-fg ansi-bold">.local</span>
+drwxr-xr-x  3 divya divya      4096 Aug 21 21:48 <span class="ansi-blue-intense-fg ansi-bold">.m2</span>
+-rw-r--r--  1 divya divya         0 Aug 26 08:36 .motd_shown
+drwxr-xr-x  3 divya divya     4096 Aug 20 11:30 <span class="ansi-blue-intense-fg ansi-bold">.node-gyp</span>
+drwxr-xr-x 13 divya divya      4096 Aug 20 16:27 <span class="ansi-blue-intense-fg ansi-bold">.npm</span>
+-rw-r--r--  1 divya divya       807 Aug 18 22:39 .profile
+-rw-r--r--  1 divya divya         0 Aug 18 22:44 .sudo_as_admin_successful
+drwxr-xr-x  2 divya divya      4096 Aug 21 19:39 <span class="ansi-blue-intense-fg ansi-bold">.vim</span>
+-rw-------  1 divya divya       805 Aug 21 19:39 .viminfo
+drwxr-xr-x  5 divya divya      4096 Aug 18 23:03 <span class="ansi-blue-intense-fg ansi-bold">.vscode-server</span>
+-rw-r--r--  1 divya divya       218 Aug 20 18:58 .wget-hsts
+drwxr-xr-x 17 divya divya      4096 Aug 23 08:46 <span class="ansi-blue-intense-fg ansi-bold">APCSA</span>
+-rwxr-xr-x  1 divya divya 690850711 May 10 11:35 <span class="ansi-green-intense-fg ansi-bold">Anaconda3-2022.05-Linux-x86_64.sh</span>
+-rw-r--r--  1 divya divya 690850711 May 10 11:35 Anaconda3-2022.05-Linux-x86_64.sh.1
+-rw-r--r--  1 divya divya 690850711 May 10 11:35 Anaconda3-2022.05-Linux-x86_64.sh.2
+-rw-r--r--  1 divya divya 690850711 May 10 11:35 Anaconda3-2022.05-Linux-x86_64.sh.3
+drwxr-xr-x 28 divya divya      4096 Aug 20 11:29 <span class="ansi-blue-intense-fg ansi-bold">anaconda3</span>
+-rw-r--r--  1 divya divya   3366077 Dec  6  2021 <span class="ansi-red-intense-fg ansi-bold">ijava-1.3.0.zip</span>
+-rw-r--r--  1 divya divya      7471 May  5  2019 install.py
+drwxr-xr-x  3 divya divya      4096 May  5  2019 <span class="ansi-blue-intense-fg ansi-bold">java</span>
+drwxr-xr-x  4 divya divya     4096 Aug 21 20:08 <span class="ansi-blue-intense-fg ansi-bold">junk</span>
+drwxr-xr-x 20 divya divya     4096 Aug 25 23:11 <span class="ansi-blue-intense-fg ansi-bold">vscode</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="all-the-posts-appear">all the posts appear<a class="anchor-link" href="#all-the-posts-appear"> </a></h3><p>ls -l does this function, as cd is set to the posts folder</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Look for posts&quot;</span>
+<span class="nb">export</span> <span class="nv">posts</span><span class="o">=</span><span class="nv">$project</span>/_posts  <span class="c1"># _posts inside project</span>
+<span class="nb">cd</span> <span class="nv">$posts</span>  <span class="c1"># this should exist per fastpages</span>
+<span class="nb">pwd</span>  <span class="c1"># present working directory</span>
+<span class="nb">cd</span> /home/divya/vscode/divya-srepo/_posts
+
+ls -l  <span class="c1"># list posts</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Look for posts
+bash: cd: /_posts: No such file or directory
+/home/divya/vscode/divya-srepo/_notebooks
+bash: cd: /home/divya/vscode/divya-srepo/_posts: No such file or directory
+total 3144
+-rw-r--r-- 1 divya divya 3162470 Aug 21 19:36 2020-02-20-test.ipynb
+-rw-r--r-- 1 divya divya     888 Aug 24 10:16 2022-08-20-java.ipynb
+-rw-r--r-- 1 divya divya     941 Aug 23 22:26 2022-08-20-python.ipynb
+-rw-r--r-- 1 divya divya    4288 Aug 25 22:57 2022-08-24-score_calculator.ipynb
+-rw-r--r-- 1 divya divya   23435 Aug 25 23:18 2022-08-25-bash_kernel.ipynb
+-rw-r--r-- 1 divya divya     771 Aug 21 19:36 README.md
+drwxr-xr-x 2 divya divya    4096 Aug 21 19:36 <span class="ansi-blue-intense-fg ansi-bold">ghtop_images</span>
+drwxr-xr-x 2 divya divya    4096 Aug 21 19:36 <span class="ansi-blue-intense-fg ansi-bold">my_icons</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="All-the-notebook-files-appear">All the notebook files appear<a class="anchor-link" href="#All-the-notebook-files-appear"> </a></h3><p>ls -l does this function, as cd is set to the notebooks folder</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Look for notebooks&quot;</span>
+<span class="nb">export</span> <span class="nv">notebooks</span><span class="o">=</span><span class="nv">$project</span>/_notebooks  <span class="c1"># _notebooks is inside project</span>
+<span class="nb">cd</span> <span class="nv">$notebooks</span>   <span class="c1"># this should exist per fastpages</span>
+<span class="nb">pwd</span>  <span class="c1"># present working directory</span>
+
+<span class="nb">cd</span> /home/divya/vscode/divya-srepo/_notebooks
+ls -l  <span class="c1"># list notebooks</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Look for notebooks
+bash: cd: /_notebooks: No such file or directory
+/home/divya/vscode/divya-srepo/_notebooks
+bash: cd: /home/divya/vscode/divya-srepo/_notebooks: No such file or directory
+total 3144
+-rw-r--r-- 1 divya divya 3162470 Aug 21 19:36 2020-02-20-test.ipynb
+-rw-r--r-- 1 divya divya     888 Aug 24 10:16 2022-08-20-java.ipynb
+-rw-r--r-- 1 divya divya     941 Aug 23 22:26 2022-08-20-python.ipynb
+-rw-r--r-- 1 divya divya    4288 Aug 25 22:57 2022-08-24-score_calculator.ipynb
+-rw-r--r-- 1 divya divya   23435 Aug 25 23:18 2022-08-25-bash_kernel.ipynb
+-rw-r--r-- 1 divya divya     771 Aug 21 19:36 README.md
+drwxr-xr-x 2 divya divya    4096 Aug 21 19:36 <span class="ansi-blue-intense-fg ansi-bold">ghtop_images</span>
+drwxr-xr-x 2 divya divya    4096 Aug 21 19:36 <span class="ansi-blue-intense-fg ansi-bold">my_icons</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="This-returns-the-contents-in-the-read-me-file">This returns the contents in the read me file<a class="anchor-link" href="#This-returns-the-contents-in-the-read-me-file"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
+
+<span class="nb">cd</span> <span class="nv">$project</span>
+<span class="nb">echo</span> <span class="s2">&quot;show the contents of README.md&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+
+cat README.md  <span class="c1"># show contents of file, in this case markdown</span>
+<span class="nb">cd</span> /home/divya/vscode/divya-srepo/README.md
+
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;end of README.md&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Navigate to project, then navigate to area wwhere files were cloned
+show the contents of README.md
+
+cat: README.md: No such file or directory
+bash: cd: /home/divya/vscode/divya-srepo/README.md: No such file or directory
+
+end of README.md
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="env">env<a class="anchor-link" href="#env"> </a></h3><p>env command is for the enviroment. It returns all the environments that have been set up. We can check whether all the required environments have been set.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Show the shell environment variables, key on left of equal value on right&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+
+env
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Show the shell environment variables, key on left of equal value on right
+
+SHELL=/bin/bash
+PYTHONUNBUFFERED=1
+project=/home/divya/vscode/APCSA
+CONDA_EXE=/home/divya/anaconda3/bin/conda
+_CE_M=
+WSL_DISTRO_NAME=Ubuntu
+ELECTRON_RUN_AS_NODE=1
+VSCODE_AMD_ENTRYPOINT=vs/workbench/api/node/extensionHostProcess
+NAME=Code
+PWD=/home/divyaa/vscode/APCSA
+LOGNAME=divya
+CONDA_PREFIX=/home/divya/anaconda3
+MOTD_SHOWN=update-motd
+project_dir=/home/divya/vscode
+HOME=/home/divya
+LANG=C.UTF-8
+WSL_INTEROP=/run/WSL/8_interop
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+WAYLAND_DISPLAY=wayland-0
+CONDA_PROMPT_MODIFIER=(base) 
+PYDEVD_USE_FRAME_EVAL=NO
+posts=/home/divya/vscode/APCSA/_posts
+LESSCLOSE=/usr/bin/lesspipe %s %s
+VSCODE_HANDLES_SIGPIPE=true
+TERM=xterm-256color
+_CE_CONDA=
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=divya
+PYTHONIOENCODING=utf-8
+notebooks=/home/divya/vscode/APCSA/_notebooks
+CONDA_SHLVL=1
+DISPLAY=:0
+SHLVL=2
+PAGER=cat
+project_repo=https://github.com/nighthawkcoders/APCSA.git
+VSCODE_CWD=/mnt/c/divya
+CONDA_PYTHON_EXE=/home/divya/anaconda3/bin/python
+XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir
+PS1=[PEXP\[\]ECT_PROMPT&gt;
+CONDA_DEFAULT_ENV=base
+WSLENV=ELECTRON_RUN_AS_NODE/w:
+VSCODE_WSL_EXT_LOCATION=/mnt/c/Users/prash/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/home/divya/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/remote-cli:/home/divya/.local/bin:/home/divya/anaconda3/bin:/home/divya/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Users/prash/AppData/Local/Microsoft/WindowsApps:/mnt/c/Aadya/bin:/snap/bin
+VSCODE_NLS_CONFIG={&#34;locale&#34;:&#34;en&#34;,&#34;availableLanguages&#34;:{}}
+HOSTTYPE=x86_64
+PULSE_SERVER=/mnt/wslg/PulseServer
+VSCODE_HANDLES_UNCAUGHT_ERRORS=true
+OLDPWD=/home/divya/vscode/APCSA/_notebooks
+VSCODE_IPC_HOOK_CLI=/mnt/wslg/runtime-dir/vscode-ipc-d123d553-5453-4217-b8bb-4bfec6326687.sock
+_=/usr/bin/env
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> <span class="nv">$project</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;show the secrets of .git&quot;</span>
+<span class="nb">cd</span> .git
+ls -l
+
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;look at config file&quot;</span>
+cat config
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+show the secrets of .git
+total 60
+-rw-r--r-- 1 divya divya    23 Aug 25 23:11 HEAD
+drwxr-xr-x 2 divya divya  4096 Aug 25 23:11 <span class="ansi-blue-intense-fg ansi-bold">branches</span>
+-rw-r--r-- 1 divya divya   269 Aug 25 23:11 config
+-rw-r--r-- 1 divya divya    73 Aug 25 23:11 description
+drwxr-xr-x 2 divya divya  4096 Aug 25 23:11 <span class="ansi-blue-intense-fg ansi-bold">hooks</span>
+-rw-r--r-- 1 divya divya 20422 Aug 25 23:11 index
+drwxr-xr-x 2 divya divya  4096 Aug 25 23:11 <span class="ansi-blue-intense-fg ansi-bold">info</span>
+drwxr-xr-x 3 divya divya  4096 Aug 25 23:11 <span class="ansi-blue-intense-fg ansi-bold">logs</span>
+drwxr-xr-x 4 divya divya  4096 Aug 25 23:11 <span class="ansi-blue-intense-fg ansi-bold">objects</span>
+-rw-r--r-- 1 divya divya   271 Aug 25 23:11 packed-refs
+drwxr-xr-x 5 divya divya  4096 Aug 25 23:11 <span class="ansi-blue-intense-fg ansi-bold">refs</span>
+
+look at config file
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote &#34;origin&#34;]
+	url = https://github.com/nighthawkcoders/APCSA.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch &#34;master&#34;]
+	remote = origin
+	merge = refs/heads/master
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/divya-srepo/2022/08/27/bash_kernel.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/divya-srepo/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/divya-srepo/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/divya-srepo/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/divya-srepo/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/divya-srepo/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
