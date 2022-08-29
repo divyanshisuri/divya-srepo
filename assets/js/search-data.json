@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Week 1 Primitive Work",
-            "content": "String 1 = &quot;divya&quot;; String 2 = &quot;suri&quot;; String name = 1 + &quot; &quot; + 2; System.out.println(name); . 3.45 . int a = 1; float b = 3.14f; float sum = (a + b); System.out.println(sum); . divya is taking CSA . boolean is_taking_CSA = true; boolean is_taking_CSP = false; if (is_taking_CSP){ System.out.println(&quot;divya is taking CSP&quot;); } else if (is_taking_CSA){ System.out.println(&quot;divya is taking CSA&quot;); } . divya suri .",
+            "content": "int a = 1; float b = 3.14f; float sum = (a + b); System.out.println(sum); . 3.45 . String 1 = &quot;divya&quot;; String 2 = &quot;suri&quot;; String name = 1 + &quot; &quot; + 2; System.out.println(name); . divya suri . boolean is_taking_CSA = true; boolean is_taking_CSP = false; if (is_taking_CSP){ System.out.println(&quot;divya is taking CSP&quot;); } else if (is_taking_CSA){ System.out.println(&quot;divya is taking CSA&quot;); } . divya is taking CSA .",
             "url": "https://divyanshisuri.github.io/divya-srepo/2022/08/24/primitives-work.html",
             "relUrl": "/2022/08/24/primitives-work.html",
             "date": " • Aug 24, 2022"
