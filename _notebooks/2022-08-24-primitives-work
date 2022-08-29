@@ -16,13 +16,13 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "3.14\n"
+      "3.45\n"
      ]
     }
    ],
    "source": [
     "int a = 1;\n",
-    "float b = 4.29f;\n",
+    "float b = 2.45f;\n",
     "float sum = (a + b);\n",
     "System.out.println(sum);"
    ]
@@ -101,7 +101,43 @@
      ]
     }
    ],
-
+   "source": [
+    "import java.util.Scanner;\n",
+    "\n",
+    "    try {\n",
+    "      Scanner numerator = new Scanner(System.in);  // creating a scanner object\n",
+    "      String score_text = \"enter the score you got\"; //usage of string to print a message\n",
+    "      System.out.println(score_text); // score they got is a float, because the points recieved could be fractional\n",
+    "      float score = Integer.parseInt(numerator.nextLine());  // read user input\n",
+    "      System.out.println(score);\n",
+    "      \n",
+    "      Scanner denominator = new Scanner(System.in);  // creating another scanner object\n",
+    "      String out_off_text = \"enter what the score is out off\"; //usage of strings again\n",
+    "      System.out.println(out_off_text); \n",
+    "      int out_off = Integer.parseInt(denominator.nextLine());  // out off is an int - something is out off is typically a whole #\n",
+    "      System.out.println(out_off);\n",
+    "      \n",
+    "      float temp_score = (score / out_off);\n",
+    "      float final_score = temp_score * 100f; //divide the two numbers, and multiple by a 100 - in float form bc score/out_off \n",
+    "                                             // could be fractional\n",
+    "      System.out.println(final_score + \"%\");  // print the percentage as a float\n",
+    "\n",
+    "      boolean passed = false; //using boolean to see if you have passed the class\n",
+    "      if (final_score > 68.0){\n",
+    "        passed = true;\n",
+    "        System.out.println(\"You passed: \" + passed);\n",
+    "      }\n",
+    "      else {\n",
+    "        System.out.println(\"You passed: \" +  passed);\n",
+    "      }\n",
+    "      \n",
+    "    } catch (Exception e) {\n",
+    "      //TODO: handle exception\n",
+    "    }    \n",
+    " "
+   ]
+  }
+ ],
  "metadata": {
   "kernelspec": {
    "display_name": "Java",
