@@ -1,11 +1,15 @@
 ---
 layout: page
-title: About Me Divya!
-permalink: /about/
+title: Blog 
+permalink: /notes/
 ---
 
-I am a student at Del Norte Highschool! I love to paint and to code!
-
+# Bucket List 
+- Go sky diving 
+- Learn how to make rock candy 
+- Dance in the rain 
+- Go to Japan 
+- Watch a silent film
 
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
