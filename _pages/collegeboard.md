@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Notes
-permalink: /notes/
+title: Collegeboard
+permalink: /collegeboard/
 ---
 
 # week 1 Notes
