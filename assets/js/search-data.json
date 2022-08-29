@@ -83,6 +83,17 @@
 
   
       ,"page1": {
+          "title": "Blog",
+          "content": "Bucket List . Go sky diving | Learn how to make rock candy | Dance in the rain | Go to Japan | Watch a silent film | . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "url": "https://divyanshisuri.github.io/divya-srepo/Blog/",
+          "relUrl": "/Blog/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
           "title": "About Me Divya!",
           "content": "I am a student at Del Norte Highschool! I love to paint and to code! . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://divyanshisuri.github.io/divya-srepo/about/",
@@ -92,17 +103,6 @@
       
   
 
-  
-
-  
-      ,"page3": {
-          "title": "Blog",
-          "content": "Bucket List . Go sky diving | Learn how to make rock candy | Dance in the rain | Go to Japan | Watch a silent film | . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
-          "url": "https://divyanshisuri.github.io/divya-srepo/notes/",
-          "relUrl": "/notes/",
-          "date": ""
-      }
-      
   
 
   
