@@ -21,29 +21,29 @@ permalink: /collegeboard/
 
 - char: The char data type is a single 16-bit Unicode character. It has a minimum value of '\u0000' (or 0) and a maximum value of '\uffff' (or 65,535 inclusive).
 
-# week 1 Notes
+# week 2 Notes
 
 java (code.org) learnings
 
-#variables
-in Java, variables are a mechanism to store values. There are different types of variables – the most commonly used variables are listed below:
-A boolean is one of two values: true or false. _* * Example instantiation: boolean done = false;
-An int stores whole numbers (no decimals). _* * Example instantiation: int x = 1; _* * A double stores decimals with up to 15 digits of precision. _* * Example instantiation: double y = -1.479582834;
-A String stores text using double quotes “”. _* * Example instantiation: String name = “Sam”;
+variables
+- in Java, variables are a mechanism to store values. There are different types of variables – the most commonly used variables are listed below:
+- A boolean is one of two values: true or false. _* * Example instantiation: boolean done = false;
+- An int stores whole numbers (no decimals). _* * Example instantiation: int x = 1; _* * A double stores decimals with up to 15 digits of precision. _* * Example instantiation: double y = -1.479582834;
+- A String stores text using double quotes “”. _* * Example instantiation: String name = “Sam”;
 the main method
 
-#main method; where program starts running
-public: The method needs to be public for the JVM to identify it.
-static: static in this context means that there will be only one type of this method and that it will be shared.
-when we call the main method, it does not require a new instantiated object – it can be called without the creation of a new object.
-void: There is nothing returned from the main method.
-main: The general signature of the main method that is identified by the JVM to execute any program from start to finish.
-String[] args: The main method’s argument (or input parameter) is an array of type String. This allows the method to accept command line arguments, which are stored as Strings in this variable. The name args can be changed.
+main method; where program starts running
+- public: The method needs to be public for the JVM to identify it.
+- static: static in this context means that there will be only one type of this method and that it will be shared.
+- when we call the main method, it does not require a new instantiated object – it can be called without the creation of a new object.
+- void: There is nothing returned from the main method.
+- main: The general signature of the main method that is identified by the JVM to execute any program from start to finish.
+- String[] args: The main method’s argument (or input parameter) is an array of type String. This allows the method to accept command line arguments, which are stored as Strings in this variable. The name args can be changed.
 inheritance
 
-#superclass: the class that the new class inherits from is generally called the parent or super class
-subclass: the class that inherits from the superclass
-We use the extends keyword to explicitly state the superclass.
+superclass: the class that the new class inherits from is generally called the parent or super class
+- subclass: the class that inherits from the superclass
+- We use the extends keyword to explicitly state the superclass.
 
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
