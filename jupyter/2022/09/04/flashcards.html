@@ -145,24 +145,24 @@ window.onload = wrap_img;
     <span class="c1">//array of question</span>
 
     <span class="kd">private</span>  <span class="n">String</span> <span class="n">textQuestion</span><span class="o">[]</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s">"What year was the DOI signed?"</span><span class="p">,</span>
-            <span class="s">"What saved the capitol during the War of 1812?"</span><span class="p">,</span>
+            <span class="s">"What year did Queen Elizabeth II die?"</span><span class="p">,</span>
+            <span class="s">"Who was the first president of the United States"</span><span class="p">,</span>
             <span class="s">"Who was the 2nd President of the US?"</span><span class="p">,</span>
-            <span class="s">"Who was mainly involved in the corrupt bargain?"</span>
+            <span class="s">"Who took part in World War 2"</span>
         <span class="p">};</span>
 
     <span class="c1">// multiple choice for each question</span>
 
     <span class="kd">private</span> <span class="n">String</span> <span class="n">multipleChoice</span><span class="o">[][]=</span> <span class="p">{</span>
-            <span class="p">{</span><span class="s">"1776"</span><span class="p">,</span><span class="s">"1729"</span><span class="p">,</span><span class="s">"1830"</span><span class="p">},</span>
-            <span class="p">{</span><span class="s">"Tornado"</span><span class="p">,</span><span class="s">"Earthquake"</span><span class="p">,</span><span class="s">"Thunderstorm"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"2022"</span><span class="p">,</span><span class="s">"1784"</span><span class="p">,</span><span class="s">"1930"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"George Washington"</span><span class="p">,</span><span class="s">"John Adamns"</span><span class="p">,</span><span class="s">"Abhraham Lincoln"</span><span class="p">},</span>
             <span class="p">{</span><span class="s">"John Adams"</span><span class="p">,</span><span class="s">"Thomas Jefferson"</span><span class="p">,</span><span class="s">"Benjamin Harrison"</span><span class="p">},</span>
-            <span class="p">{</span><span class="s">"Abraham Lincoln"</span><span class="p">,</span><span class="s">"John Quincy Adams"</span><span class="p">,</span><span class="s">"Ulysses S. Grant"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Winston Churchill"</span><span class="p">,</span><span class="s">"Louis XIV"</span><span class="p">,</span><span class="s">"Martin Luther"</span><span class="p">},</span>
 
     <span class="p">};</span>
 
     <span class="c1">// arraqy of correct question answer</span>
-    <span class="kd">private</span> <span class="n">String</span> <span class="n">mCorrectAnswer</span><span class="o">[]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"1776"</span><span class="p">,</span> <span class="s">"Thunderstorm"</span><span class="p">,</span> <span class="s">"John Adams"</span><span class="p">,</span> <span class="s">"John Quincy Adams"</span><span class="p">};</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">mCorrectAnswer</span><span class="o">[]</span> <span class="o">=</span> <span class="p">{</span><span class="s">"2022"</span><span class="p">,</span> <span class="s">"George Washington"</span><span class="p">,</span> <span class="s">"Winston Churchill"</span><span class="p">,</span> <span class="s">""</span><span class="p">};</span>
 
     <span class="c1">//method for get number of question</span>
     <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getLength</span><span class="p">(){</span>
@@ -229,10 +229,10 @@ window.onload = wrap_img;
     <span class="c1">//     hMapNumbers.put(2, "Two");</span>
     <span class="c1">//     hMapNumbers.put(3, "Three");</span>
     <span class="kd">public</span> <span class="kd">final</span> <span class="n">String</span><span class="o">[][]</span> <span class="n">QUESTIONS</span> <span class="o">=</span> <span class="p">{</span> <span class="c1">// 2D Array of ANSI Terminal Colors</span>
-        <span class="p">{</span><span class="s">"What year was the DOI signed?"</span><span class="p">,</span> <span class="s">"1776"</span><span class="p">},</span>
-        <span class="p">{</span><span class="s">"What saved the capitol during the War of 1812?"</span><span class="p">,</span> <span class="s">"Thunderstorm"</span><span class="p">},</span>
+        <span class="p">{</span><span class="s">"What year did Queen Elizabeth II die?"</span><span class="p">,</span> <span class="s">"2022"</span><span class="p">},</span>
+        <span class="p">{</span><span class="s">"First president of the united states?"</span><span class="p">,</span> <span class="s">"George Washington"</span><span class="p">},</span>
         <span class="p">{</span><span class="s">"Who was the 2nd President of the US?"</span><span class="p">,</span> <span class="s">"John Adams"</span><span class="p">},</span>
-        <span class="p">{</span><span class="s">"Who was mainly involved in the corrupt bargain?"</span><span class="p">,</span> <span class="s">"John Qunicy Adams"</span><span class="p">},</span>
+        <span class="p">{</span><span class="s">"Who was involved in World War II?"</span><span class="p">,</span> <span class="s">"Winston Churchill"</span><span class="p">},</span>
     <span class="p">};</span>
     <span class="c1">// 2D column location for data</span>
     <span class="kd">public</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">TITLE</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
