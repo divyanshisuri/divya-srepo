@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Flights Api | divya</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Flights Api" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://divyanshisuri.github.io/divya-srepo/jupyter/2022/10/02/hotels_api.html" />
+<meta property="og:url" content="https://divyanshisuri.github.io/divya-srepo/jupyter/2022/10/02/hotels_api.html" />
+<meta property="og:site_name" content="divya" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-02T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Flights Api" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-02T00:00:00-05:00","datePublished":"2022-10-02T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Flights Api","mainEntityOfPage":{"@type":"WebPage","@id":"https://divyanshisuri.github.io/divya-srepo/jupyter/2022/10/02/hotels_api.html"},"url":"https://divyanshisuri.github.io/divya-srepo/jupyter/2022/10/02/hotels_api.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/divya-srepo/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://divyanshisuri.github.io/divya-srepo/feed.xml" title="divya" /><link rel="shortcut icon" type="image/x-icon" href="/divya-srepo/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/divya-srepo/">divya</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/divya-srepo/Blog/">Blog</a><a class="page-link" href="/divya-srepo/about/">About Me Divya!</a><a class="page-link" href="/divya-srepo/frontend12/updates">Frontend Changes</a><a class="page-link" href="/divya-srepo/collegeboard/">Collegeboard</a><a class="page-link" href="/divya-srepo/search/">Search</a><a class="page-link" href="/divya-srepo/table%20of%20contents/">Table of Contents</a><a class="page-link" href="/divya-srepo/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Flights Api</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-02T00:00:00-05:00" itemprop="datePublished">
+        Oct 2, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/divya-srepo/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/divyanshisuri/divya-srepo/tree/master/_notebooks/2022-10-02-hotels_api.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/divya-srepo/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/divyanshisuri/divya-srepo/master?filepath=_notebooks%2F2022-10-02-hotels_api.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/divya-srepo/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/divyanshisuri/divya-srepo/blob/master/_notebooks/2022-10-02-hotels_api.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/divya-srepo/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fdivyanshisuri%2Fdivya-srepo%2Fblob%2Fmaster%2F_notebooks%2F2022-10-02-hotels_api.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/divya-srepo/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h3"><a href="#Benefit-of-using-and-API?">Benefit of using and API? </a></li>
+<li class="toc-entry toc-h3"><a href="#Benefit(s)-of-backend-implementation?">Benefit(s) of backend implementation? </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-10-02-hotels_api.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>An HttpClient can be used to send requests and retrieve their responses</li>
+<li>An HttpRequest sets up header and body to API provider</li>
+<li>An HttpResponse is returned as a result of sending an HttpRequest</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.net.URI</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpClient</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpRequest</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpResponse</span><span class="p">;</span>
+
+<span class="n">HttpRequest</span> <span class="n">request</span> <span class="o">=</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">newBuilder</span><span class="p">()</span>
+    <span class="p">.</span><span class="na">uri</span><span class="p">(</span><span class="n">URI</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="s">"https://hotels4.p.rapidapi.com/v2/get-meta-data"</span><span class="p">))</span>
+    <span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"x-rapidapi-key"</span><span class="p">,</span> <span class="s">"80afb5b6afmsh552d92e769ba3a5p1bfac9jsnfb6c407dd20f"</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"x-rapidapi-host"</span><span class="p">,</span> <span class="s">"hotels4.p.rapidapi.com"</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">method</span><span class="p">(</span><span class="s">"GET"</span><span class="p">,</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">BodyPublishers</span><span class="p">.</span><span class="na">noBody</span><span class="p">())</span>
+    <span class="p">.</span><span class="na">build</span><span class="p">();</span>
+
+<span class="c1">//RapidAPI request and response</span>
+<span class="n">HttpResponse</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">response</span> <span class="o">=</span> <span class="n">HttpClient</span><span class="p">.</span><span class="na">newHttpClient</span><span class="p">().</span><span class="na">send</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">HttpResponse</span><span class="p">.</span><span class="na">BodyHandlers</span><span class="p">.</span><span class="na">ofString</span><span class="p">());</span>
+
+<span class="c1">//RapidAPI Body</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="na">body</span><span class="p">());</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{"version":1549273446,"rows":[{"description":"Airbus A220 family","models":[{"Name":"Airbus A220-100","Code":"BCS1"},{"Name":"Airbus A220-300","Code":"BCS3"}]},{"description":"Airbus A300 family","models":[{"Name":"Airbus A300","Code":"A30B"},{"Name":"Airbus A300-600","Code":"A306"}]},{"description":"Airbus A310 family","models":[{"Name":"Airbus A310","Code":"A310"}]},{"description":"Airbus A320 family","models":[{"Name":"Airbus A318","Code":"A318"},{"Name":"Airbus A319","Code":"A319"},{"Name":"Airbus A319neo","Code":"A19N"},{"Name":"Airbus A320","Code":"A320"},{"Name":"Airbus A320neo","Code":"A20N"},{"Name":"Airbus A321","Code":"A321"},{"Name":"Airbus A321neo","Code":"A21N"}]},{"description":"Airbus A330 family","models":[{"Name":"Airbus A330-200","Code":"A332"},{"Name":"Airbus A330-300","Code":"A333"},{"Name":"Airbus A330-900","Code":"A339"}]},{"description":"Airbus A340 family","models":[{"Name":"Airbus A340-200","Code":"A342"},{"Name":"Airbus A340-300","Code":"A343"},{"Name":"Airbus A340-500","Code":"A345"},{"Name":"Airbus A340-600","Code":"A346"}]},{"description":"Airbus A350 family","models":[{"Name":"Airbus A350-1000","Code":"A35K"},{"Name":"Airbus A350-900","Code":"A359"}]},{"description":"Airbus A380-800","models":[{"Name":"Airbus A380-800","Code":"A388"}]},{"description":"ATR 42 family","models":[{"Name":"ATR 42-300","Code":"AT43"},{"Name":"ATR 42-500","Code":"AT45"},{"Name":"ATR 42-600","Code":"AT46"}]},{"description":"ATR 72 family","models":[{"Name":"ATR 72-200","Code":"AT72"},{"Name":"ATR 72-500","Code":"AT75"},{"Name":"ATR 72-600","Code":"AT76"}]},{"description":"Avro RJ family","models":[{"Name":"Avro RJ100","Code":"RJ1H"},{"Name":"Avro RJ70","Code":"RJ70"},{"Name":"Avro RJ85","Code":"RJ85"}]},{"description":"Boeing 737 family","models":[{"Name":"Boeing 737 MAX 7","Code":"B37M"},{"Name":"Boeing 737 MAX 8","Code":"B38M"},{"Name":"Boeing 737 MAX 9","Code":"B39M"},{"Name":"Boeing 737-200","Code":"B732"},{"Name":"Boeing 737-300","Code":"B733"},{"Name":"Boeing 737-400","Code":"B734"},{"Name":"Boeing 737-500","Code":"B735"},{"Name":"Boeing 737-600","Code":"B736"},{"Name":"Boeing 737-700","Code":"B737"},{"Name":"Boeing 737-800","Code":"B738"},{"Name":"Boeing 737-900","Code":"B739"}]},{"description":"Boeing 747 family","models":[{"Name":"Boeing 747-200","Code":"B742"},{"Name":"Boeing 747-300","Code":"B743"},{"Name":"Boeing 747-400","Code":"B744"},{"Name":"Boeing 747-8","Code":"B748"},{"Name":"Boeing 747SP","Code":"B74S"}]},{"description":"Boeing 757 family","models":[{"Name":"Boeing 757-200","Code":"B752"},{"Name":"Boeing 757-300","Code":"B753"}]},{"description":"Boeing 767 family","models":[{"Name":"Boeing 767-200","Code":"B762"},{"Name":"Boeing 767-300","Code":"B763"},{"Name":"Boeing 767-400","Code":"B764"}]},{"description":"Boeing 777 family","models":[{"Name":"Boeing 777-200","Code":"B772"},{"Name":"Boeing 777-200LR","Code":"B77L"},{"Name":"Boeing 777-300","Code":"B773"},{"Name":"Boeing 777-300ER","Code":"B77W"}]},{"description":"Boeing 787 family","models":[{"Name":"Boeing 787-10","Code":"B78X"},{"Name":"Boeing 787-8","Code":"B788"},{"Name":"Boeing 787-9","Code":"B789"}]},{"description":"Bombardier CRJ family","models":[{"Name":"Bombardier CRJ-100","Code":"CRJ1"},{"Name":"Bombardier CRJ-1000","Code":"CRJX"},{"Name":"Bombardier CRJ-200","Code":"CRJ2"},{"Name":"Bombardier CRJ-700","Code":"CRJ7"},{"Name":"Bombardier CRJ-900","Code":"CRJ9"}]},{"description":"Bombardier Dash 8 family","models":[{"Name":"Bombardier Dash 8-100","Code":"DH8A"},{"Name":"Bombardier Dash 8-200","Code":"DH8B"},{"Name":"Bombardier Dash 8-300","Code":"DH8C"},{"Name":"Bombardier Dash 8-400","Code":"DH8D"}]},{"description":"Embraer E-Jet family","models":[{"Name":"Embraer E170","Code":"E170"},{"Name":"Embraer E175 (long)","Code":"E75L"},{"Name":"Embraer E175 (short)","Code":"E75S"},{"Name":"Embraer E190","Code":"E190"},{"Name":"Embraer E195","Code":"E195"}]},{"description":"Embraer RJ135","models":[{"Name":"Embraer RJ135","Code":"E135"}]},{"description":"Embraer RJ145","models":[{"Name":"Embraer RJ145","Code":"E145"}]},{"description":"Fokker family","models":[{"Name":"Fokker 100","Code":"F100"},{"Name":"Fokker 50","Code":"F50"},{"Name":"Fokker 70","Code":"F70"}]},{"description":"McDonnell Douglas DC-10","models":[{"Name":"McDonnell Douglas DC-10","Code":"DC10"}]},{"description":"McDonnell Douglas MD-11","models":[{"Name":"McDonnell Douglas MD-11","Code":"MD11"}]},{"description":"McDonnell Douglas MD-80 family","models":[{"Name":"McDonnell Douglas MD-81","Code":"MD81"},{"Name":"McDonnell Douglas MD-82","Code":"MD82"},{"Name":"McDonnell Douglas MD-83","Code":"MD83"},{"Name":"McDonnell Douglas MD-87","Code":"MD87"},{"Name":"McDonnell Douglas MD-88","Code":"MD88"}]},{"description":"McDonnell Douglas MD-90","models":[{"Name":"McDonnell Douglas MD-90","Code":"MD90"}]},{"description":"Saab 2000","models":[{"Name":"Saab 2000","Code":"SB20"}]},{"description":"Saab 340","models":[{"Name":"Saab 340","Code":"SF34"}]},{"description":"Sukhoi Superjet 100","models":[{"Name":"Sukhoi Superjet 100","Code":"SU95"}]}]}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.net.URI</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpClient</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpRequest</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpResponse</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Date</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.HashMap</span><span class="p">;</span>
+
+<span class="kn">import</span> <span class="nn">org.json.simple.JSONObject</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">org.json.simple.parser.JSONParser</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.http.HttpStatus</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.http.ResponseEntity</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.web.bind.annotation.*</span><span class="p">;</span>
+
+<span class="nd">@RestController</span> <span class="c1">// annotation to create a RESTful web services</span>
+<span class="nd">@RequestMapping</span><span class="p">(</span><span class="s">"/api/flights"</span><span class="p">)</span>  <span class="c1">//prefix of API</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">flights</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">JSONObject</span> <span class="n">body</span><span class="p">;</span> <span class="c1">//last run result</span>
+    <span class="kd">private</span> <span class="n">HttpStatus</span> <span class="n">status</span><span class="p">;</span> <span class="c1">//last run status</span>
+    <span class="n">String</span> <span class="n">last_run</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span> <span class="c1">//last run day of month</span>
+
+    <span class="nd">@GetMapping</span><span class="p">(</span><span class="s">"/monthly"</span><span class="p">)</span>   <span class="c1">//added to end of prefix as endpoint</span>
+    <span class="kd">public</span> <span class="n">ResponseEntity</span><span class="o">&lt;</span><span class="n">JSONObject</span><span class="o">&gt;</span> <span class="nf">flights</span><span class="p">()</span> <span class="p">{</span>
+
+        <span class="c1">//calls API once a day, sets body and status properties</span>
+        <span class="n">String</span> <span class="n">today</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="p">().</span><span class="na">toString</span><span class="p">().</span><span class="na">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">500</span><span class="p">);</span> 
+        <span class="k">if</span> <span class="p">(</span><span class="n">last_run</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span class="o">!</span><span class="n">today</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">last_run</span><span class="p">))</span>
+        <span class="p">{</span>
+            <span class="k">try</span> <span class="p">{</span> 
+
+                <span class="n">HttpRequest</span> <span class="n">request</span> <span class="o">=</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">newBuilder</span><span class="p">()</span>
+                 <span class="p">.</span><span class="na">uri</span><span class="p">(</span><span class="n">URI</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="s">"https://hotels4.p.rapidapi.com/v2/get-meta-data"</span><span class="p">))</span>
+                 <span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"x-rapidapi-key"</span><span class="p">,</span> <span class="s">"80afb5b6afmsh552d92e769ba3a5p1bfac9jsnfb6c407dd20f"</span><span class="p">)</span>
+                 <span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"x-rapidapi-host"</span><span class="p">,</span> <span class="s">"hotels4.p.rapidapi.com"</span><span class="p">)</span>
+                 <span class="p">.</span><span class="na">method</span><span class="p">(</span><span class="s">"GET"</span><span class="p">,</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">BodyPublishers</span><span class="p">.</span><span class="na">noBody</span><span class="p">())</span>
+                 <span class="p">.</span><span class="na">build</span><span class="p">();</span>
+
+                <span class="c1">//RapidAPI request and response</span>
+                <span class="n">HttpResponse</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">response</span> <span class="o">=</span> <span class="n">HttpClient</span><span class="p">.</span><span class="na">newHttpClient</span><span class="p">().</span><span class="na">send</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">HttpResponse</span><span class="p">.</span><span class="na">BodyHandlers</span><span class="p">.</span><span class="na">ofString</span><span class="p">());</span>
+
+                <span class="c1">//JSONParser extracts text body and parses to JSONObject</span>
+                <span class="k">this</span><span class="p">.</span><span class="na">body</span> <span class="o">=</span> <span class="p">(</span><span class="n">JSONObject</span><span class="p">)</span> <span class="k">new</span> <span class="n">JSONParser</span><span class="p">().</span><span class="na">parse</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="na">body</span><span class="p">());</span>
+                <span class="k">this</span><span class="p">.</span><span class="na">status</span> <span class="o">=</span> <span class="n">HttpStatus</span><span class="p">.</span><span class="na">OK</span><span class="p">;</span>  <span class="c1">//200 success</span>
+                <span class="k">this</span><span class="p">.</span><span class="na">last_run</span> <span class="o">=</span> <span class="n">today</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">//capture failure info</span>
+                <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">String</span><span class="o">&gt;</span> <span class="n">status</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+                <span class="n">status</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">"status"</span><span class="p">,</span> <span class="s">"RapidApi failure: "</span> <span class="o">+</span> <span class="n">e</span><span class="p">);</span>
+
+                <span class="c1">//Setup object for error</span>
+                <span class="k">this</span><span class="p">.</span><span class="na">body</span> <span class="o">=</span> <span class="p">(</span><span class="n">JSONObject</span><span class="p">)</span> <span class="n">status</span><span class="p">;</span>
+                <span class="k">this</span><span class="p">.</span><span class="na">status</span> <span class="o">=</span> <span class="n">HttpStatus</span><span class="p">.</span><span class="na">INTERNAL_SERVER_ERROR</span><span class="p">;</span> <span class="c1">//500 error</span>
+                <span class="k">this</span><span class="p">.</span><span class="na">last_run</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="c1">//return JSONObject in RESTful style</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="n">ResponseEntity</span><span class="o">&lt;&gt;</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="n">status</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">import </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">org.json.simple.JSONObject</span><span class="ansi-black-intense-fg ansi-bold">;</span>
+<span class="ansi-red-intense-fg ansi-bold">package org.json.simple does not exist</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Benefit-of-using-and-API?">
+<a class="anchor" href="#Benefit-of-using-and-API?" aria-hidden="true"><span class="octicon octicon-link"></span></a>Benefit of using and API?<a class="anchor-link" href="#Benefit-of-using-and-API?"> </a>
+</h3>
+<ul>
+<li>APIs can be found all over the internet. We can just use a few lines of code to get lots of data from the internet, so it is easier, more efficient, and less time consuming.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Benefit(s)-of-backend-implementation?">
+<a class="anchor" href="#Benefit(s)-of-backend-implementation?" aria-hidden="true"><span class="octicon octicon-link"></span></a>Benefit(s) of backend implementation?<a class="anchor-link" href="#Benefit(s)-of-backend-implementation?"> </a>
+</h3>
+<ul>
+<li>Can set limit on how many times an api could run in a day or a month so that it would not exceed the maximun amount; for exmaple, the flights api (free subscription) only allows the api to be run 500 times per month</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="divyanshisuri/divya-srepo"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/divya-srepo/jupyter/2022/10/02/hotels_api.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/divya-srepo/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/divya-srepo/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/divya-srepo/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/divya-srepo/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/divya-srepo/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
