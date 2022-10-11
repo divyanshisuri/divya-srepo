@@ -125,16 +125,6 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>List is an interface, and the instances of List can be created by implementing various classes.</li>
-<li>ArrayList class is used to create a dynamic array that contains objects.</li>
-</ul>
-
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -159,10 +149,10 @@ window.onload = wrap_img;
        
         <span class="c1">// Adding elements using add() method</span>
         <span class="c1">// Custom input elements</span>
+        <span class="n">place</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;California&quot;</span><span class="p">);</span>
         <span class="n">place</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;New York&quot;</span><span class="p">);</span>
-        <span class="n">place</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Hawii&quot;</span><span class="p">);</span>
-        <span class="n">place</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Los Angeles&quot;</span><span class="p">);</span>
-        <span class="n">place</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Korea&quot;</span><span class="p">);</span>
+        <span class="n">place</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Boston&quot;</span><span class="p">);</span>
+        <span class="n">place</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Washington&quot;</span><span class="p">);</span>
  
         <span class="c1">// Print and display the elements in</span>
         <span class="c1">// ArrayList class object </span>
@@ -179,7 +169,7 @@ window.onload = wrap_img;
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">place</span><span class="p">.</span><span class="na">size</span><span class="p">());</span> 
 
         <span class="c1">//change index 1 to Japan</span>
-        <span class="n">place</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;Japan&quot;</span><span class="p">);</span>
+        <span class="n">place</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;India&quot;</span><span class="p">);</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">place</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
 
     <span class="p">}</span>
@@ -198,11 +188,11 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[New York, Hawii, Los Angeles, Korea]
-[New York, Los Angeles, Korea]
-Los Angeles
+<pre>[California, New York, Boston, Washington]
+[California, New York, Boston]
+Seattle
 3
-Japan
+India
 </pre>
 </div>
 </div>
@@ -213,21 +203,6 @@ Japan
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>ArrayList is basically a part of the collection framework and is present in java.util package.</li>
-<li>Java ArrayList allows us to randomly access the list. </li>
-<li>ArrayList can not be used for primitive types, like int, char, etc. We need a wrapper class for such cases. <ul>
-<li>Interger for int, Long for long, Boolean for boolean, etc.</li>
-<li>Wrapper classes provide a way to use primitive data types (int, boolean, etc..) as objects.</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>helpful videos to help with understanding</p>
