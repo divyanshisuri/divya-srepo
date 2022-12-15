@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Primitives | divya</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Primitives" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://divyanshisuri.github.io/divya-srepo/jupyter/2022/10/16/primitives2.html" />
+<meta property="og:url" content="https://divyanshisuri.github.io/divya-srepo/jupyter/2022/10/16/primitives2.html" />
+<meta property="og:site_name" content="divya" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-16T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Primitives" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-16T00:00:00-05:00","datePublished":"2022-10-16T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Primitives","mainEntityOfPage":{"@type":"WebPage","@id":"https://divyanshisuri.github.io/divya-srepo/jupyter/2022/10/16/primitives2.html"},"url":"https://divyanshisuri.github.io/divya-srepo/jupyter/2022/10/16/primitives2.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/divya-srepo/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://divyanshisuri.github.io/divya-srepo/feed.xml" title="divya" /><link rel="shortcut icon" type="image/x-icon" href="/divya-srepo/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/divya-srepo/">divya</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/divya-srepo/Blog/">Blog</a><a class="page-link" href="/divya-srepo/about/">About Me Divya!</a><a class="page-link" href="/divya-srepo/frontend12/updates">Frontend Changes</a><a class="page-link" href="/divya-srepo/collegeboard/">Collegeboard</a><a class="page-link" href="/divya-srepo/search/">Search</a><a class="page-link" href="/divya-srepo/table%20of%20contents/">Table of Contents</a><a class="page-link" href="/divya-srepo/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Primitives</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-16T00:00:00-05:00" itemprop="datePublished">
+        Oct 16, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/divya-srepo/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/divyanshisuri/divya-srepo/tree/master/_notebooks/2022-10-16-primitives2.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/divya-srepo/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/divyanshisuri/divya-srepo/master?filepath=_notebooks%2F2022-10-16-primitives2.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/divya-srepo/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/divyanshisuri/divya-srepo/blob/master/_notebooks/2022-10-16-primitives2.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/divya-srepo/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fdivyanshisuri%2Fdivya-srepo%2Fblob%2Fmaster%2F_notebooks%2F2022-10-16-primitives2.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/divya-srepo/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Primitve-Types-on-CSA-Exam">Primitve Types on CSA Exam </a></li>
+<li class="toc-entry toc-h2"><a href="#Declaring-Variables-in-Java">Declaring Variables in Java </a></li>
+<li class="toc-entry toc-h2"><a href="#Assignment-Statements">Assignment Statements </a></li>
+<li class="toc-entry toc-h2"><a href="#Operators">Operators </a></li>
+<li class="toc-entry toc-h2"><a href="#Compound-Assignment-Operators">Compound Assignment Operators </a></li>
+<li class="toc-entry toc-h2"><a href="#Casting-and-Ranges-of-Variables">Casting and Ranges of Variables </a></li>
+<li class="toc-entry toc-h2"><a href="#Common-Mistakes">Common Mistakes </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-10-16-primitives2.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Primitve-Types-on-CSA-Exam">
+<a class="anchor" href="#Primitve-Types-on-CSA-Exam" aria-hidden="true"><span class="octicon octicon-link"></span></a>Primitve Types on CSA Exam<a class="anchor-link" href="#Primitve-Types-on-CSA-Exam"> </a>
+</h2>
+<ul>
+<li>int - which store integers (numbers like 3, -76, 20393)</li>
+<li>double - which store floating point numbers (decimal numbers like 6.3 -0.9, and 60293.93032)</li>
+<li>boolean - which store Boolean values (either true or false).</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Declaring-Variables-in-Java">
+<a class="anchor" href="#Declaring-Variables-in-Java" aria-hidden="true"><span class="octicon octicon-link"></span></a>Declaring Variables in Java<a class="anchor-link" href="#Declaring-Variables-in-Java"> </a>
+</h2>
+<ul>
+<li>To create(declare) a variable, you must tell Java its data type and its name. <ul>
+<li>have to tell Java the type of the variable because Java needs to know how many bits to use and how to represent the value</li>
+<li>integer - 32 bits of memory</li>
+<li>double - 64 bits</li>
+<li>boolean - one bit</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Example: 
+int score;
+score = 4;</p>
+<p>(initialize)
+int score = 4;</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Assignment-Statements">
+<a class="anchor" href="#Assignment-Statements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assignment Statements<a class="anchor-link" href="#Assignment-Statements"> </a>
+</h2>
+<ul>
+<li>Assignment statements initialize or change the value stored in a variable using the assignment operator =. </li>
+<li>Instead of saying equals for the = in an assignment statement, say “gets” or “is assigned” to remember that the variable gets or is assigned the value on the right. </li>
+<li>Example: score = (10 * points) + 5<ul>
+<li>score - variable</li>
+<li>= is assigned to </li>
+<li>(10 * points) + 5 - expression</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Operators">
+<a class="anchor" href="#Operators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Operators<a class="anchor-link" href="#Operators"> </a>
+</h2>
+<ul>
+<li>Java uses the operator == to test if the value on the left is equal to the value on the right and != to test if two items are not equal. </li>
+<li>Use == and != only with int values and not doubles because double values are an approximation and 3.3333 will not equal 3.3334 even though they are very close.</li>
+<li>
+<p>Don’t get one equal sign = confused with two equal signs ==.</p>
+<ul>
+<li>= - assign a value to a variable </li>
+<li>== - test a variable to see if it is a certain value and that returns true or false as you’ll see below</li>
+</ul>
+</li>
+<li>
+<p>An arithmetic operation that uses two int values will evaluate to an int value. With integer division, any decimal part in the result will be thrown away.</p>
+</li>
+<li>An arithmetic operation that uses at least one double value will evaluate to a double value.</li>
+<li>During evaluation, operands are associated with operators according to operator precedence to determine how they are grouped. (*, /, % have precedence over + and -, unless parentheses are used to group those.)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Compound-Assignment-Operators">
+<a class="anchor" href="#Compound-Assignment-Operators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compound Assignment Operators<a class="anchor-link" href="#Compound-Assignment-Operators"> </a>
+</h2>
+<ul>
+<li>Compound assignment operators are shortcuts that do a math operation and assignment in one step</li>
+<li>The most common shortcut operator ++, the plus-plus or increment operator, is used to add 1 to the current value; x++ is the same as x += 1 and the same as x = x + 1</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Casting-and-Ranges-of-Variables">
+<a class="anchor" href="#Casting-and-Ranges-of-Variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Casting and Ranges of Variables<a class="anchor-link" href="#Casting-and-Ranges-of-Variables"> </a>
+</h2>
+<ul>
+<li>type casting is used to convert variable values from one type to another</li>
+<li>Situation to use casting: If you have integers and you want a double result from some mathematical operation cast one of the integers to a double using (double) as shown above.</li>
+</ul>
+<p>int nearestInt = (int)(number + 0.5);</p>
+<p>int nearestNegInt = (int)(negNumber – 0.5);</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Common-Mistakes">
+<a class="anchor" href="#Common-Mistakes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Common Mistakes<a class="anchor-link" href="#Common-Mistakes"> </a>
+</h2>
+<ul>
+<li>forgetting that Java is case sensitive - myScore is not the same as myscore.</li>
+<li>forgetting to specify the type when declaring a variable (using name = value; instead of type name = value;)</li>
+<li>using a variable name, but never declaring the variable.</li>
+<li>using the wrong name for the variable. For example calling it studentTotal when you declare it, but later calling it total.</li>
+<li>using the wrong type for a variable. Don’t forget that using integer types in calculations will give an integer result. So either cast one integer value to double or use a double variable if you want the fractional part (the part after the decimal point).</li>
+<li>using == to compare double values. Remember that double values are often an approximation. You might want to test if the absolute value of the difference between the two values is less than some amount instead.</li>
+<li>assuming that some value like 0 will be smaller than other int values. Remember that int values can be negative as well. If you want to set a value to the smallest possible int values use Integer.MIN_VALUE.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="divyanshisuri/divya-srepo"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/divya-srepo/jupyter/2022/10/16/primitives2.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/divya-srepo/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/divya-srepo/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/divya-srepo/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/exampleUser" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/divya-srepo/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/exampleUser" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/divya-srepo/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
