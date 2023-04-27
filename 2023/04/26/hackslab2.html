@@ -118,14 +118,13 @@
     <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">array</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">sum</span> <span class="o">+=</span> <span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">;</span>
-    <span class="p">}</span> <span class="c1">//adds each array element to sum and divides by length of array</span>
-    <span class="k">return</span> <span class="n">sum</span> <span class="o">/</span> <span class="n">array</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
+    <span class="p">}</span>     <span class="k">return</span> <span class="n">sum</span> <span class="o">/</span> <span class="n">array</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="c1">//tester array</span>
 <span class="kt">int</span><span class="o">[]</span> <span class="n">test</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">};</span>
 
-<span class="c1">//returns 10</span>
+<span class="c1">//</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">average</span><span class="p">(</span><span class="n">test</span><span class="p">));</span>
 </pre></div>
 
@@ -190,7 +189,7 @@
     <span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     
-    <span class="c1">// Iterate over the diagonal elements of the array</span>
+    <span class="c1">// </span>
     <span class="k">while</span> <span class="p">(</span><span class="n">row</span> <span class="o">&lt;</span> <span class="n">array2D</span><span class="p">.</span><span class="na">length</span> <span class="o">&amp;&amp;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">array2D</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">sum</span> <span class="o">+=</span> <span class="n">array2D</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span><span class="p">;</span>
         <span class="n">count</span><span class="o">++</span><span class="p">;</span>
@@ -198,7 +197,7 @@
         <span class="n">col</span><span class="o">++</span><span class="p">;</span>
     <span class="p">}</span>
     
-    <span class="c1">// Calculate and return the average</span>
+    <span class="c1">// </span>
     <span class="k">return</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">sum</span> <span class="o">/</span> <span class="n">count</span><span class="p">;</span>
 <span class="p">}</span>
 
